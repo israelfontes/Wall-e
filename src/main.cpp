@@ -29,10 +29,10 @@
 #define STANDBY         2
 #define FOLLOW          3
 
-#define SPEED_SEARCH    150  //Velocidade para procurar objeto
+#define SPEED_SEARCH    200  //Velocidade para procurar objeto
 #define MAX_DISTANCE    90  //Distancia maxima onde o objeto pode estar
 #define VAR_DISTANCE    4    //Variância padrão de distancia do objeto em cm
-#define TURN_SPEED      150  //Velocidade para fazer a volta   
+#define TURN_SPEED      200  //Velocidade para fazer a volta   
 
 void go(short speed);
 void back(short speed);
@@ -50,7 +50,7 @@ short position;
 
 Ultrasonic ultrasonic(PIN_TRIGGER, PIN_ECHO);
 
-short speedDefault = 255;
+short speedDefault = 200;
 
 void setup(){
   pinMode(PINA1,OUTPUT);
